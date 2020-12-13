@@ -1,0 +1,155 @@
+\documentclass[%singlesided,
+               doublesided,
+               paper=a4,
+               fontsize=10pt
+              ]{my-resume}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set geometry
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength\highlightwidth{8cm}
+\setlength\headerheight{4cm}            % note that margintop gets added to this value, i.e. the header bar is 5cm
+\setlength\marginleft{1cm}
+\setlength\marginright{\marginleft}      % needs to be 1.5 times to be actually equal. why?
+\setlength\margintop{1cm}
+\setlength\marginbottom{1cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FONTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{fontspec}
+\setmainfont{Carlito}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COLORS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\colorlet{highlightbarcolor}{lightgray}
+\colorlet{headerbarcolor}{darkgray}
+
+\colorlet{headerfontcolor}{white}
+\colorlet{accent}{awesome-red}
+\colorlet{heading}{black}
+\colorlet{emphasis}{black}
+\colorlet{body}{black}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\name{Shubham Kumar}
+\tagline{Student who possesses proven writing, speaking, and marketing abilities that will aid your company in meeting its objectives.}
+\photo[round]{image.png}{\dimexpr \headerheight-\marginbottom}   % make photo exactly match the header with margintop/marginright/marginbottom as margin
+
+\makeheader
+
+\highlightbar{
+
+    \section{Contact}
+    
+    \email{mshubham0309@gmail.com}
+    \phone{+91-7903423811}
+    \location{Sant Bhawan, Ashok Nagar, Road No. 8A}
+    \vspace{0.5em}
+    \location{Kankarbagh, Patna, Bihar, India-800020}
+    \github{@imshubhamkr}{https://github.com/ishubhamkr}
+    \linkedin{Shubham Kumar}{https://www.linkedin.com/in/imshubhamkumar/}
+
+    \section{Skills}
+    
+    \skillsection{Programming}
+    \skill{c++}{5}
+    \skill{C}{5}
+    \skill{Java}{4}
+    \skill{Python}{4}
+    \skill{Prolog}{3}
+    \skill{LaTeX}{4}
+    
+    \vspace{0.5em}
+    \skillsection{Operating Systems}
+    \skill{Windows}{5}
+    \skill{Linux}{5}
+    \skill{MacOS}{5}
+    
+    \vspace{0.5em}
+    \skillsection{Software \& Tools}
+    \skill{Matlab}{3}
+    \skill{Data Pentesting Tools}{3}
+    (e.g. Nessus, Zenmap, ...)\\
+    \skill{Netbeans}{3}
+    \skill{Anaconda}{3}
+    \skill{Office}{5}
+    
+    \vspace{0.5em}
+    \skillsection{Concepts}
+    \skill{Data Structure}{5}
+    \skill{Algorithms}{5}
+    \skill{Operating System}{4}
+    \skill{Computer Networks}{5}
+    \skill{DBMS}{4}
+    
+    \vspace{0.5em}
+    \skillsection{Strength}
+    \skill{Leadership}{5}
+    \skill{Quick-Learner}{5}
+    \skill{Team Worker}{5}
+    \skill{Punctual}{5}
+    \skill{Self-Motivated}{5}
+    \skill{Responsible}{5}
+    
+    \vspace{0.5em}
+    \skillsection{Languages}
+    \skill{English}{5}
+    \skill{Hindi}{5}
+    \bigskip
+
+}
+\mainbar{
+    \section{Career Objective}
+    To build a good career, and to show my abilities by accepting challenges, and doing various research work in the field of technology through continuous learning and commitment, which can further help me to climb the success ladder
+    
+    \section[\faMortarBoard]{Education}
+    \job{2020 - 2022}
+        {ABV- Indian Institute of Information Technology, Gwalior}
+        {M.Tech- Information Security}
+        {}
+    \job{2015-2019}
+        {West Bengal University of Technology, Kolkata}
+        {B.Tech- CSE}
+        {College: Techno India, Saltlake, Kolkata}
+    \job{2014-2015}
+        {Millia Convent English School, Rambagh, Purnea}
+        {Intermediate}
+        {CBSE Board}
+    \job{2012-2013}
+        {S R DAV Public School, Purnea}
+        {Matriculation}
+        {CBSE Board}
+    \section{Project}
+    \achievement{Chat Bot }
+    \achievement{Plant Nomenclature Identification using plant leaf}
+    \section{Certificates}
+    \achievement{Certified Ethical Hacker-Indian Cyber Security Solution}
+    \achievement{Information Security-5, NPTEL}
+    \achievement{Object Oriented Analysis And Design, NPTEL}
+    \section{Position Of Responsibility}
+    \achievement{Campus Ambassdor, IIT Kanpur's Techkriti'18}
+    \achievement{Campus Ambassdor, IIM Bangalore's UNMAAD'18}
+    \section{Extra-Curricular Activities}
+    \achievement{Participated in zonal round of Robo-Tryst,2016}
+    \achievement{Participated in ABSTRACT in ECLECTICA,2019}
+    
+}
+\makebody
+\clearpage
+
+\end{document}
